@@ -1,0 +1,9 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+import {{pascalCase name}} from '../../src/views/{{kebabCase name}}/{{kebabCase name}}';
+import MockedComponent from '../support/mocked-component';
+
+it('renders correctly', () => {
+  const tree = renderer.create(<MockedComponent Component={ {{pascalCase name}} } />).toJSON();
+  expect(tree).toMatchSnapshot();
+});

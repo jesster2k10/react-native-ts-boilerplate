@@ -1,0 +1,9 @@
+import {getSnapshot} from 'mobx-state-tree';
+import {{pascalCase name}} from '../../src/models/{{kebabCase name}}'
+
+describe('{{pascalCase name}} model', () => {
+  it('it can be created', () => {
+    const {{camelCase name}} = {{pascalCase name}}.create()
+    expect(getSnapshot({{camelCase name}})).toEqual({})
+  })
+})

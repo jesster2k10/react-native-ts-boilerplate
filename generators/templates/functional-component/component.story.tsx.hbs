@@ -1,0 +1,9 @@
+import React from 'react'
+import {storiesOf} from '@storybook/react-native'
+import {{{pascalCase name}}} from './{{kebabCase name}}'
+
+declare let module: any
+
+storiesOf('{{pascalCase name}}', module).add('Default view', () => {
+  <{{pascalCase name}} />
+})

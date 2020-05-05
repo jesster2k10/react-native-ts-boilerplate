@@ -1,0 +1,21 @@
+import React from 'react'
+import {Text} from '@components'
+import {useNavigation} from '@react-navigation/native'
+import {t} from '@i18n'
+import {Wrapper} from './{{kebabCase name}}.styled'
+
+const {{pascalCase name}} = () => {
+  const {setOptions} = useNavigation()
+  
+  setOptions({
+    title: t('views.{{camelCase name}}.title')
+  })
+
+  return (
+    <Wrapper>
+      <Text>{{pascalCase name}}</Text>
+    </Wrapper>
+  )
+}
+
+export default {{pascalCase name}}

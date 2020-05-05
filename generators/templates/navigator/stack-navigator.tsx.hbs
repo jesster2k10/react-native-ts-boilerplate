@@ -1,0 +1,21 @@
+import React, {Fragment} from 'react'
+import {createStackNavigator} from '@react-navigation/stack'
+import useNavigationStyles from '../use-navigation-styles'
+import routes from '../routes'
+
+const Stack = createStackNavigator()
+
+const {{pascalCase name}}Navigator = () => {
+  const {headerStyle, headerTitleStyle} = useNavigationStyles()
+  const screenOptions = {
+    headerStyle,
+    headerTitleStyle,
+  }
+  return (
+    <Stack.Navigator screenOptions={screenOptions}>
+      <Stack.Screen name={ routes.{{camelCase name}} } component={Fragment} />
+    </Stack.Navigator>
+  )
+}
+
+export default {{pascalCase name}}Navigator

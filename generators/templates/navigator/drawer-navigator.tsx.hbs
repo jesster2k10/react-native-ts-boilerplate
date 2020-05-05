@@ -1,0 +1,15 @@
+import React, {Fragment} from 'react'
+import {createDrawerNavigator} from '@react-navigation/drawer'
+import routes from '../routes'
+
+const Drawer = createDrawerNavigator()
+
+const {{pascalCase name}}Navigator = () => {
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name={ routes.{{camelCase name}} } component={Fragment} />
+    </Drawer.Navigator>
+  )
+}
+
+export default {{pascalCase name}}Navigator

@@ -1,0 +1,14 @@
+import {
+  model,
+  id{{#if types}},
+  {{#each types}}{{this}},{{/each}}{{/if}}
+} from 'mst-decorators'
+
+class {{pascalCase name}} {
+  @id id: string
+  {{#each fields}}
+  @{{this.type}} {{camelCase this.name}}: {{this.type}}
+  {{/each}}
+}
+
+export default model({{pascalCase name}})
