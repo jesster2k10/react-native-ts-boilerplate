@@ -20,7 +20,8 @@
     "g": "yarn run generate",
     "postinstall": "npx jetify",
     "storybook": "start-storybook -p 9001 -c ./storybook",
-    "link": "npx react-native link"
+    "link": "npx react-native link",
+    "setup": "sh bin/setup"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
