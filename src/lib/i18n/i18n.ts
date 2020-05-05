@@ -2,7 +2,7 @@
  * This code handles localized strings using i18n and react native.
  * It's been taken from the excellent Ignite Bowser Starter Template.
  */
-import Localize from 'react-native-localize';
+import * as Localize from 'react-native-localize';
 import i18n from 'i18n-js';
 import en from './locales/en.json';
 

@@ -1,1 +1,7 @@
-{}
+{
+  "views": {
+    "home": {
+      "title": "Home"
+    }
+  }
+}
