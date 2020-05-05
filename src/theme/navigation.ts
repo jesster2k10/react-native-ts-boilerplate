@@ -9,7 +9,7 @@ export default {
       backgroundColor: colors.light.header,
     },
     headerTitleStyle: {
-      backgroundColor: colors.light.headerText,
+      color: colors.light.headerText,
     },
     tabBarOptions: {
       style: {
