@@ -7,10 +7,10 @@ A easy to use, fully featured, React Native Boilerplate that helps you save time
 ### Features
 
 - Auto generate components, screens, navigators, models & more from an intuitive CLI
-- Styled Components (with dark mode)
-- Firebase Firestore/Auth
+- Out of the box dark mode support (using styled-components)
+- Firebase & Firebase Auth included out the box
 - MobX, MobX State Tree, MST Decorators
-- i18n included by default
+- i18n for localization
 - Clean file structure
 - Storybook support
 - e2e testing with Detox
