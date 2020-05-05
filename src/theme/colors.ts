@@ -36,9 +36,9 @@ export const palette = {
 export const lightColors = {
   backgroundInverted: palette.lightGrey,
   background: palette.white,
-  headings: palette.white,
+  headings: palette.black,
   headingsInverted: palette.black,
-  text: palette.white,
+  text: palette.black,
   textInverted: palette.black,
   danger: palette.lightRed,
   dangerDark: palette.red,

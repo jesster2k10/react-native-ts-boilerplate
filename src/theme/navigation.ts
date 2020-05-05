@@ -22,7 +22,7 @@ export default {
       backgroundColor: colors.dark.header,
     },
     headerTitleStyle: {
-      colors: colors.dark.headerText,
+      color: colors.dark.headerText,
     },
     tabBarOptions: {
       style: {
