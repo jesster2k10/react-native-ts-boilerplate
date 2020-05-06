@@ -1,4 +1,4 @@
-import {PlopGenerator} from 'plop';
+import { PlopGenerator } from 'plop';
 import prettierTransform from './utils/prettier-tranform';
 
 const componentGenerator: PlopGenerator = {
@@ -63,7 +63,7 @@ const componentGenerator: PlopGenerator = {
         type: 'append',
         path: 'storybook/stories.ts',
         pattern: '/* PLOP_INJECT_IMPORT */',
-        template: `require('../${path('.tsx')}')`,
+        template: `require('../${path('.story.tsx')}')`,
         transform: prettierTransform,
       });
     }
