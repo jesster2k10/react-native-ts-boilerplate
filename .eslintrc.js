@@ -70,7 +70,8 @@ module.exports = {
     // Prefer state as a class property
     'react/state-in-constructor': 'off',
     'react-hooks/exhaustive-deps': 'off',
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.story.tsx", "storybook/*"] }]
   },
   env: {
     "jest/globals": true
