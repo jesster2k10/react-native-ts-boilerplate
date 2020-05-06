@@ -20,7 +20,7 @@
     "g": "yarn run generate",
     "postinstall": "npx jetify",
     "storybook": "start-storybook -p 9001 -c ./storybook",
-    "link": "npx react-native link",
+    "link:fonts": "npx react-native link",
     "setup": "sh bin/setup"
   },
   "dependencies": {

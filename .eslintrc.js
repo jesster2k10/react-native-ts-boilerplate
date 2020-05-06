@@ -71,7 +71,8 @@ module.exports = {
     'react/state-in-constructor': 'off',
     'react-hooks/exhaustive-deps': 'off',
     'import/prefer-default-export': 'off',
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.story.tsx", "storybook/*"] }]
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.story.tsx", "storybook/*"] }],
+    "no-use-before-define": ["error", { "variables": false }]
   },
   env: {
     "jest/globals": true
