@@ -83,9 +83,10 @@
     "husky": "^4.2.5",
     "jest": "^24.9.0",
     "lint-staged": "^10.2.2",
-    "metro-react-native-babel-preset": "^0.58.0",
+    "metro-react-native-babel-preset": "^0.59.0",
     "plop": "^2.6.0",
     "prettier": "^2.0.5",
+    "react-native-dotenv": "^0.2.0",
     "react-test-renderer": "16.11.0",
     "typescript": "^3.8.3"
   },
