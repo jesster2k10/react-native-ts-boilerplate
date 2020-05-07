@@ -6,15 +6,12 @@ A easy to use, fully featured, React Native Boilerplate that helps you save time
 
 ### Features
 
-- Auto generate components, screens, navigators, models & more from an intuitive CLI
-- Out of the box dark mode support (using styled-components)
-- Firebase & Firebase Auth included out the box
-- MobX, MobX State Tree, MST Decorators
-- i18n for localization
-- Clean file structure
-- Storybook support
-- e2e testing with Detox
-- React native vector icons included out of the box
+- Includes all the libraries you need to get going right away (react-navigation, styled-components, react-native-dotenv, react-native-vector-icons)
+- Allows you to quickly generate and scaffold components, screens, navigators, models & more form an intuitive CLI generator
+- TDD with Storybook, Jest & E2E testing configured out of the box
+- Includes both firebase and firebase authentication
+- Clear folder structure that favours convention over configuration
+- and [much more](./FEATURES.md)
 
 ### Getting Started
 
@@ -537,7 +534,7 @@ export default () => (
 )
 ```
 
-You can view the prop types in the [icon.props.ts](./src/components/icons/icons.props.ts) file for more information on how to use it.
+You can view the prop types in the [icon.props.ts](./src/components/icon/icon.props.ts) file for more information on how to use it.
 
 ## Background
 
