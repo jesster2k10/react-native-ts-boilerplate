@@ -36,6 +36,8 @@ const Icon = ({type, size, onPress, name, color, style}: IconProps) => {
   })();
 
   const IconComponent = (() => {
+    // You can add more icon types as they get introduced,
+    // or remove them as you need
     switch (type) {
       case 'evil-icons':
         return Evil;
