@@ -37,7 +37,7 @@ const modelGenerator: PlopGenerator = {
         type: 'append',
         pattern: "/* PLOP_INJECT_EXPORT */",
         path: 'src/models/index.ts',
-        template: prettierTransform(`export { default as {{pascalCase name}} } from './{{kebabCase name}}'`),
+        template: `export { default as {{pascalCase name}} } from './{{kebabCase name}}'`,
       }
     ];
   },
