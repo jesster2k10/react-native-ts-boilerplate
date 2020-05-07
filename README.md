@@ -14,6 +14,7 @@ A easy to use, fully featured, React Native Boilerplate that helps you save time
 - Clean file structure
 - Storybook support
 - e2e testing with Detox
+- React native vector icons included out of the box
 
 ### Getting Started
 
@@ -516,6 +517,27 @@ export default HomeNavigator;
 - Generates the repository file
 - Generates a test file
 - Adds the repository to the `index.ts` as an export
+
+## Vector Icons
+
+This project provides a nice interface for dealing with vector icons, powered by the amazing [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) library, included by default.
+
+Usage Example:
+
+```tsx
+import {Icon} from '@components'
+
+export default () => (
+  <Icon
+    type="fa"
+    name="facebook-f"
+    onPress={() => alert('Facebook icon on press')}
+    size="small"
+  />
+)
+```
+
+You can view the prop types in the [icon.props.ts](./src/components/icons/icons.props.ts) file for more information on how to use it.
 
 ## Background
 
