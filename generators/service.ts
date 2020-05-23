@@ -1,4 +1,4 @@
-import { PlopGenerator } from 'plop';
+import {PlopGenerator} from 'plop';
 import prettierTransform from './utils/prettier-tranform';
 
 const serviceGenerator: PlopGenerator = {
@@ -14,22 +14,22 @@ const serviceGenerator: PlopGenerator = {
     {
       type: 'add',
       templateFile: 'generators/templates/service/service.ts.hbs',
-      path: 'src/repositories/{{kebabCase name}}.ts',
+      path: 'src/services/{{kebabCase name}}.ts',
       transform: prettierTransform,
     },
     {
       type: 'add',
       templateFile: 'generators/templates/service/service.test.ts.hbs',
-      path: 'test/repositories/{{kebabCase name}}.test.ts',
+      path: 'test/services/{{kebabCase name}}.test.ts',
       transform: prettierTransform,
     },
     {
       type: 'append',
-      pattern: "/* PLOP_INJECT_EXPORT */",
+      pattern: '/* PLOP_INJECT_EXPORT */',
       path: 'src/services/index.ts',
       template: `export { default as {{camelCase name}}Service } from './{{kebabCase name}}'`,
       transform: prettierTransform,
-    }
+    },
   ],
 };
 
