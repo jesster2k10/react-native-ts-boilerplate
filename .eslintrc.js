@@ -15,13 +15,13 @@ module.exports = {
     'react-hooks',
     'unused-imports',
     'detox',
-    'jest'
+    'jest',
   ],
   rules: {
     // Semi-colons are un-needed
     semi: 'off',
     // Allow .tsx extensions
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.tsx'] }],
+    'react/jsx-filename-extension': [1, {extensions: ['.js', '.tsx']}],
     // Spaces between class members don't look as good
     'lines-between-class-members': 'off',
     // Un-necessary rule
@@ -41,7 +41,7 @@ module.exports = {
           '@theme',
           '@views',
           '@models',
-          '@repositories'
+          '@repositories',
         ],
       },
     ],
@@ -71,10 +71,20 @@ module.exports = {
     'react/state-in-constructor': 'off',
     'react-hooks/exhaustive-deps': 'off',
     'import/prefer-default-export': 'off',
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.story.tsx", "storybook/*"] }],
-    "no-use-before-define": ["error", { "variables": false }]
+    'import/no-extraneous-dependencies': [
+      'error',
+      {devDependencies: ['**/*.story.tsx', 'storybook/*']},
+    ],
+    'no-use-before-define': ['error', {variables: false}],
+    'no-useless-constructor': 'off',
+    'no-empty-function': [
+      'error',
+      {
+        allow: ['constructors'],
+      },
+    ],
   },
   env: {
-    "jest/globals": true
-  }
-}
+    'jest/globals': true,
+  },
+};
